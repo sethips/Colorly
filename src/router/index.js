@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import Gradients from '@/components/Gradients'
-import Palettes from '@/components/Palettes'
-import AboutUs from '@/components/AboutUs'
+import Home from '../components/Home.vue'
+import Gradients from '../components/Gradients.vue'
+import Palettes from '../components/palettes.vue'
+import AboutUs from '../components/AboutUs.vue'
 
 Vue.use(Router)
 
