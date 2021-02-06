@@ -4,12 +4,12 @@
       <img id="app-logo" src="../assets/icons/icon.png" />
     </main>
     <article class="description">
-      "Colorly" is a Library of Colors, Gradients & Palettes. The Idea is to
+      "Colorly" is a curated Library of Solid, Gradient & Palette Colors. The Idea is to
       create 'One Stop Destination' for Designers & Developers to discover the
       perfect color schemes for their next website or design.
     </article>
     <div>
-      <span>Project By - </span
+      <span>Developed By - </span
       ><span class="twitter-name">
         <v-icon class="twitter-logo">mdi-twitter</v-icon>
         <a :href="twitterLink" target="_blank">12sanketkumbhar</a>
@@ -73,7 +73,10 @@ export default {
 .go-back-button {
   font-size: 36px;
 }
-.twitter-logo,
+.twitter-logo {
+  color: #1da1f2;
+}
+
 .twitter-name {
   color: #1da1f2;
   font-weight: bold;
