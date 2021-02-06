@@ -4,12 +4,21 @@
       <img id="app-logo" src="../assets/icons/icon.png" />
     </main>
     <article class="description">
-      Colorly App is a Library of Colors, Gradients & Palettes. The Idea is to
+      "Colorly" is a Library of Colors, Gradients & Palettes. The Idea is to
       create 'One Stop Destination' for Designers & Developers to discover the
       perfect color schemes for their next website or design.
     </article>
+    <div>
+      <span>Project By - </span
+      ><span class="twitter-name">
+        <v-icon class="twitter-logo">mdi-twitter</v-icon>
+        <a :href="twitterLink" target="_blank">12sanketkumbhar</a>
+      </span>
+    </div>
     <div class="footer">
-      <v-icon @click="goBack">mdi-close-circle-outline</v-icon>
+      <v-icon class="go-back-button" @click="goBack"
+        >mdi-close-circle-outline</v-icon
+      >
     </div>
   </div>
 </template>
@@ -17,7 +26,11 @@
 <script>
 import router from "../router";
 export default {
-  created() {},
+  data() {
+    return {
+      twitterLink: "https://twitter.com/12sanketkumbhar",
+    };
+  },
   methods: {
     goBack() {
       router.go(-1);
@@ -52,7 +65,17 @@ export default {
 
 .description {
   width: 60vw;
+  font-weight: bold;
   text-align: center;
   font-size: 16px;
+}
+
+.go-back-button {
+  font-size: 36px;
+}
+.twitter-logo,
+.twitter-name {
+  color: #1da1f2;
+  font-weight: bold;
 }
 </style>

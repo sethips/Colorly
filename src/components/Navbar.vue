@@ -96,7 +96,6 @@ export default {
 #app-icon {
   margin: 10px 10px 10px 10px;
 }
-
 @media screen and (max-width: 768px) {
   #app-icon {
     margin: 0px 10px 0px 0px;
