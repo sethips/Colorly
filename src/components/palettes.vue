@@ -20,7 +20,7 @@
             @click="showCopyMessage(item.hexOne, $event)"
             class="hex-text"
           >
-            {{ item.hexOne.toUpperCase() }}
+            {{ item.hexOne }}
           </p>
         </div>
         <div class="palette-child" :style="getCardColors(item.hexTwo)">
@@ -31,7 +31,7 @@
             @click="showCopyMessage(item.hexTwo, $event)"
             class="hex-text"
           >
-            {{ item.hexTwo.toUpperCase() }}
+            {{ item.hexTwo }}
           </p>
         </div>
         <div class="palette-child" :style="getCardColors(item.hexThree)">
@@ -42,7 +42,7 @@
             @click="showCopyMessage(item.hexThree, $event)"
             class="hex-text"
           >
-            {{ item.hexThree.toUpperCase() }}
+            {{ item.hexThree }}
           </p>
         </div>
         <div class="palette-child" :style="getCardColors(item.hexFour)">
@@ -53,7 +53,7 @@
             @click="showCopyMessage(item.hexFour, $event)"
             class="hex-text"
           >
-            {{ item.hexFour.toUpperCase() }}
+            {{ item.hexFour }}
           </p>
         </div>
       </v-card>
