@@ -81,6 +81,10 @@ export default {
   height: 30px;
   margin-right: 10px;
 }
+#app-logo:hover {
+  transition: 1s;
+  transform: rotate(360deg);
+}
 .tab-item-wrapper {
   /* v-tabs container height is 96px */
   height: calc(100vh - 96px) !important;
