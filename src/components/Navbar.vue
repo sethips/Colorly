@@ -76,9 +76,10 @@ export default {
 </script>
 
 <style>
-.app-logo {
-  width: 50px;
-  height: 50px;
+#app-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 .tab-item-wrapper {
   /* v-tabs container height is 96px */
