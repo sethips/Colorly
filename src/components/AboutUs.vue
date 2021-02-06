@@ -4,9 +4,9 @@
       <img id="app-logo" src="../assets/icons/icon.png" />
     </main>
     <article class="description">
-      Colorly App is a Library of Colors, Gradients & Palettes. The Idea is
-      to create 'One Stop Destination' for Designers & Developers to discover
-      the perfect color schemes for their next website or design.
+      Colorly App is a Library of Colors, Gradients & Palettes. The Idea is to
+      create 'One Stop Destination' for Designers & Developers to discover the
+      perfect color schemes for their next website or design.
     </article>
     <div class="footer">
       <v-icon @click="goBack">mdi-close-circle-outline</v-icon>

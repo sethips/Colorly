@@ -3,7 +3,7 @@
     <v-toolbar class="tool-bar" flat dense v-show="$route.name !== 'About'">
 
       <img id="app-logo" src="../assets/icons/icon.png" />
-      <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
+      <v-toolbar-title id="app-title">{{ appTitle }}</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
