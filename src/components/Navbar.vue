@@ -7,11 +7,15 @@
       <v-spacer></v-spacer>
 
       <v-btn :ripple="false" icon @click="switchTheme">
-        <v-icon v-if="!$vuetify.theme.dark">mdi-weather-night</v-icon>
-        <v-icon v-if="$vuetify.theme.dark">mdi-weather-sunny</v-icon>
+        <v-icon title="Theme" v-if="!$vuetify.theme.dark"
+          >mdi-weather-night</v-icon
+        >
+        <v-icon title="About" v-if="$vuetify.theme.dark"
+          >mdi-weather-sunny</v-icon
+        >
       </v-btn>
 
-      <v-btn :ripple="false" icon to="/about">
+      <v-btn :ripple="false" icon :to="{ name: 'About' }">
         <v-icon>mdi-information-outline</v-icon>
       </v-btn>
 
@@ -40,11 +44,8 @@
 </template>
 
 <script>
-import { eventBus } from "../main";
-
 export default {
   components: {},
-  created() {},
   data() {
     return {
       activeTab: "/",
@@ -59,6 +60,7 @@ export default {
   methods: {
     switchTheme() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      // Theme preferences stored to local storage for next use
       localStorage.setItem("storedTheme", this.$vuetify.theme.dark.toString());
     },
   },
