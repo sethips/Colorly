@@ -182,10 +182,13 @@ export default {
   cursor: pointer;
   font-size: 14px;
 }
+
 .v-application p {
   margin-bottom: 0px;
 }
-
+.v-sheet.v-card {
+  border-radius: 16px;
+}
 @media screen and (max-width: 1248px) {
   .palette-container {
     grid-template-columns: repeat(4, 1fr);
