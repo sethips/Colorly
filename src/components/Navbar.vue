@@ -1,7 +1,8 @@
 <template>
   <div class="main-container">
     <v-toolbar class="tool-bar" flat dense v-show="$route.name !== 'About'">
-      <v-icon id="app-icon">$app</v-icon>
+
+      <img id="app-logo" src="../assets/icons/icon.png" />
       <v-toolbar-title>{{ appTitle }}</v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -75,6 +76,10 @@ export default {
 </script>
 
 <style>
+.app-logo {
+  width: 50px;
+  height: 50px;
+}
 .tab-item-wrapper {
   /* v-tabs container height is 96px */
   height: calc(100vh - 96px) !important;

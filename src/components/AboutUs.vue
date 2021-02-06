@@ -1,7 +1,7 @@
 <template>
   <div id="aboutus-container">
     <main class="main-title">
-      <img id="app-logo" src="../assets/icons/MDC.png" />
+      <img id="app-logo" src="../assets/icons/icon.png" />
     </main>
     <article class="description">
       Colorly App is a Library of Colors, Gradients & Palettes. The Idea is
