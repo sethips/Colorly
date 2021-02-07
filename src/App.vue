@@ -6,8 +6,6 @@
 
 <script>
 import Navbar from "../src/components/Navbar";
-import { eventBus } from "./main";
-
 export default {
   name: "App",
   data() {
@@ -19,9 +17,9 @@ export default {
     Navbar,
   },
   created() {
-    const theme = localStorage.getItem("storedTheme");
-    if (theme) {
-      if (theme === "true") {
+    const themeValue = localStorage.getItem("storedTheme");
+    if (themeValue) {
+      if (themeValue === "true") {
         this.$vuetify.theme.dark = true;
       } else {
         this.$vuetify.theme.dark = false;

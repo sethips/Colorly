@@ -33,11 +33,9 @@
     <v-tabs-items class="tab-item" touchless v-model="activeTab">
       <v-tab-item v-for="tab of tabs" :key="tab.id" :value="tab.route">
         <div :class="setHeight">
-          <transition>
             <keep-alive>
               <router-view></router-view>
             </keep-alive>
-          </transition>
         </div>
       </v-tab-item>
     </v-tabs-items>
@@ -84,6 +82,9 @@ export default {
 #app-logo:hover {
   transition: 1s;
   transform: rotate(360deg);
+}
+#app-title {
+  font-weight: bold;
 }
 .tab-item-wrapper {
   /* v-tabs container height is 96px */
